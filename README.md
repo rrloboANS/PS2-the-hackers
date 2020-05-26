@@ -8,7 +8,7 @@ You should work in groups of 2 to 4 (not alone and not more than 4). If this is 
 1. Mireya Smith
 1. Richard Lobo
 1. Norman Andino
-All of us worked together to figure out how to create the commands and solve the questions.
+# All of us worked together to figure out how to create the commands and solve the questions.
 
 ## Due date
 **It is my hope that is can be turned in on Friday, May 22nd**, but I will take it until May 26th at the latest.
