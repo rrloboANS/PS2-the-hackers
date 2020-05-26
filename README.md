@@ -37,7 +37,7 @@ ATL |           1476       |        262              |       15
 CLT |           476        |        107              |       3
 MIA |           205        |       30                |       0
 
-* GNV to ATL
+## GNV to ATL
     Total
     grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"ATL' GNV.flights >> GNVtoATL 
     wc –l GNVtoATL
@@ -48,7 +48,8 @@ MIA |           205        |       30                |       0
 Delayed by wether
 awk -F, '{print $24}' GNVtoATL | sort
 15 flights
-GNV to CLT
+
+## GNV to CLT
 Total
 grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"CLT' GNV.flights >> GNVtoCLT 
 wc –l GNVtoCLT
@@ -60,7 +61,7 @@ Delayed by wether
 awk -F, '{print $24}' GNVtoATL | sort
 3 flights
 
-GNV to MIA
+## GNV to MIA
 Total
 grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"MIA' GNV.flights >> GNVtoMIA 
 wc –l GNVtoMIA
