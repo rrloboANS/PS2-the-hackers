@@ -89,9 +89,9 @@ Total of 350 airports
     awk -F',' '{print $3,$4,$5}' /ufrc/bsc4452/share/Class_Files/data/flights.May2017-Apr2018.csv >> test1/question4
     grep 'FL\"$' test1/question4 | sort | uniq | wc –l
 20 cities
-"DAB" "Daytona Beach  FL"
-"ECP" "Panama City  FL"
-"EYW" "Key West  FL"
+    "DAB" "Daytona Beach  FL"
+    "ECP" "Panama City  FL"
+    "EYW" "Key West  FL"
 "FLL" "Fort Lauderdale  FL"
 "GNV" "Gainesville  FL"
 "JAX" "Jacksonville  FL"
