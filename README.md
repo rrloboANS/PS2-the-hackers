@@ -74,7 +74,7 @@ MIA |           205        |       30                |       0
     0 flights
 
 3. Within a function, print a list of all unique airport codes contained in the dataset. (*3 points*)
-
+##
     awk -F',' '{print $7}' /ufrc/bsc4452/share/Class_Files/data/flights.May2017-Apr2018.csv >> ./test1/airport.code2
     sort test1/airport.code2 | uniq >> uniq.airport.code2
     wc -l uniq.airport.code2
