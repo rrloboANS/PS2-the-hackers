@@ -33,9 +33,9 @@ Result: 803 delayed flights
 
 GNV to: | Total flights | Total flights delayed (>15min) | Total flights delayed due to Weather
 --------|---------------|------------------------|-------------------------------
-ATL |           1476                262                     15
-CLT |           476                 107                     3
-MIA |           205                 30                      0
+ATL |           1476       |        262              |       15
+CLT |           476        |        107              |       3
+MIA |           205        |       30                |       0
 
 GNV to ATL
 Total
