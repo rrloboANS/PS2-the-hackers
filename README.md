@@ -37,14 +37,14 @@ ATL |           1476       |        262              |       15
 CLT |           476        |        107              |       3
 MIA |           205        |       30                |       0
 
-GNV to ATL
-Total
-grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"ATL' GNV.flights >> GNVtoATL 
-wc –l GNVtoATL
-1476 flight
-Delayed 15 min
-grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"ATL\"\,\"Atlanta\, GA\"\,\"GA\"\,\"[[:digit:]]*\",[[:digit:]]*\.[[:digit:]]*\,1' GNV.flights | wc –l
-262 flight
+* GNV to ATL
+    Total
+    grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"ATL' GNV.flights >> GNVtoATL 
+    wc –l GNVtoATL
+    1476 flight
+    Delayed 15 min
+    grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"ATL\"\,\"Atlanta\, GA\"\,\"GA\"\,\"[[:digit:]]*\",[[:digit:]]*\.[[:digit:]]*\,1'         GNV.flights | wc –l
+    262 flight
 Delayed by wether
 awk -F, '{print $24}' GNVtoATL | sort
 15 flights
