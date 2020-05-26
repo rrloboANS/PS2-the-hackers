@@ -37,7 +37,7 @@ ATL |           1476       |        262              |       15
 CLT |           476        |        107              |       3
 MIA |           205        |       30                |       0
 
-## GNV to ATL
+** GNV to ATL
     Total
     grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"ATL' GNV.flights >> GNVtoATL 
     wc –l GNVtoATL
