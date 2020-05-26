@@ -8,7 +8,7 @@ You should work in groups of 2 to 4 (not alone and not more than 4). If this is 
 1. Mireya Smith
 1. Richard Lobo
 1. Norman Andino
-1.
+All of us worked together to figure out how to create the commands and solve the questions.
 
 ## Due date
 **It is my hope that is can be turned in on Friday, May 22nd**, but I will take it until May 26th at the latest.
@@ -23,19 +23,19 @@ I have provided a dataset that you will use for this. The dataset and it's descr
 
 The goal of this project is to write a Bash script that does the following:
 1. Counts the number of flights that were delayed more than 15 minutes into or out of Gainesville, FL (airport code GNV) during the timeframe covered by the dataset. (*2 points*)
-
-* grep GNV /ufrc/bsc4452/share/Class_Files/data/flights.May2017-Apr2018.csv >> ./GNV.flights
-* grep -E '\s\w\w\"\,\"\w{2}\",\"[[:digit:]]*\",[[:digit:]]*\.[[:digit:]]*,1' GNV.flights | wc -l
-* Result: 803 delayed flights
+##
+    grep GNV /ufrc/bsc4452/share/Class_Files/data/flights.May2017-Apr2018.csv >> ./GNV.flights
+    grep -E '\s\w\w\"\,\"\w{2}\",\"[[:digit:]]*\",[[:digit:]]*\.[[:digit:]]*,1' GNV.flights | wc -l
+Result: 803 delayed flights
 
 2. Produce a table (text is fine) with the data to fill in this table (*13 points*):
 
 
 GNV to: | Total flights | Total flights delayed (>15min) | Total flights delayed due to Weather
 --------|---------------|------------------------|-------------------------------
-ATL |           1476       |        262              |       15
-CLT |           476        |        107              |       3
-MIA |           205        |       30                |       0
+ATL |1476|262|15
+CLT |476|107|3
+MIA |205|30|0
 
 ## 
     #GNV to ATL
