@@ -89,23 +89,41 @@ Total of 350 airports
     awk -F',' '{print $3,$4,$5}' /ufrc/bsc4452/share/Class_Files/data/flights.May2017-Apr2018.csv >> test1/question4
     grep 'FL\"$' test1/question4 | sort | uniq | wc –l
 20 cities **
+
 "DAB" "Daytona Beach  FL" **
+
 "ECP" "Panama City  FL" **
+
 "EYW" "Key West  FL"
+
 "FLL" "Fort Lauderdale  FL"
+
 "GNV" "Gainesville  FL"
+
 "JAX" "Jacksonville  FL"
+
 "MCO" "Orlando  FL"
+
 "MIA" "Miami  FL"
+
 "MLB" "Melbourne  FL"
+
 "PBI" "West Palm Beach/Palm Beach  FL"
+
 "PGD" "Punta Gorda  FL"
+
 "PIE" "St. Petersburg  FL"
+
 "PNS" "Pensacola  FL"
+
 "RSW" "Fort Myers  FL"
+
 "SFB" "Sanford  FL"
+
 "SRQ" "Sarasota/Bradenton  FL"
+
 "TLH" "Tallahassee  FL"
+
 "TPA" "Tampa  FL"
 
 **Bonus question:**  Asks for user input (see chapter 28) to enter either a airport code or city, state name and then calculates the number of flights as in question 1. (*5 points extra credit*)
