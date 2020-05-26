@@ -37,54 +37,54 @@ ATL |           1476       |        262              |       15
 CLT |           476        |        107              |       3
 MIA |           205        |       30                |       0
 
-** GNV to ATL
-    Total
+## GNV to ATL
+    #Total
     grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"ATL' GNV.flights >> GNVtoATL 
     wc –l GNVtoATL
     1476 flight
-    Delayed 15 min
+    #Delayed 15 min
     grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"ATL\"\,\"Atlanta\, GA\"\,\"GA\"\,\"[[:digit:]]*\",[[:digit:]]*\.[[:digit:]]*\,1'         GNV.flights | wc –l
     262 flight
-Delayed by wether
-awk -F, '{print $24}' GNVtoATL | sort
-15 flights
+    #Delayed by wether
+    awk -F, '{print $24}' GNVtoATL | sort
+    15 flights
 
 ## GNV to CLT
-Total
-grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"CLT' GNV.flights >> GNVtoCLT 
-wc –l GNVtoCLT
-476 flight
-Delayed 15 min
-grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"CLT\"\,\"Charlotte\, NC\"\,\"NC\"\,\"[[:digit:]]*\",[[:digit:]]*\.[[:digit:]]*\,1' GNV.flights | wc –l
-107 flight
-Delayed by wether
-awk -F, '{print $24}' GNVtoATL | sort
-3 flights
+    #Total
+    grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"CLT' GNV.flights >> GNVtoCLT 
+    wc –l GNVtoCLT
+    476 flight
+    #Delayed 15 min
+    grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"CLT\"\,\"Charlotte\, NC\"\,\"NC\"\,\"[[:digit:]]*\",[[:digit:]]*\.[[:digit:]]*\,1' GNV.flights | wc –l
+    107 flight
+    #Delayed by wether
+    awk -F, '{print $24}' GNVtoATL | sort
+    3 flights
 
 ## GNV to MIA
-Total
-grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"MIA' GNV.flights >> GNVtoMIA 
-wc –l GNVtoMIA
-205 flight
-Delayed 15 min
-grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"MIA\"\,\"Miami\, FL\"\,\"FL\"\,\"[[:digit:]]*\",[[:digit:]]*\.[[:digit:]]*\,1' GNV.flights | wc –l
-30 flight
-Delayed by wether
-awk -F, '{print $24}' GNVtoATL | sort
-0 flights
+    #Total
+    grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"MIA' GNV.flights >> GNVtoMIA 
+    wc –l GNVtoMIA
+    205 flight
+    #Delayed 15 min
+    grep -E 'GNV\"\,\"Gainesville, FL\"\,\"FL\"\,\"MIA\"\,\"Miami\, FL\"\,\"FL\"\,\"[[:digit:]]*\",[[:digit:]]*\.[[:digit:]]*\,1' GNV.flights | wc –l
+    30 flight
+    #Delayed by wether
+    awk -F, '{print $24}' GNVtoATL | sort
+    0 flights
 
 3. Within a function, print a list of all unique airport codes contained in the dataset. (*3 points*)
 
-awk -F',' '{print $7}' /ufrc/bsc4452/share/Class_Files/data/flights.May2017-Apr2018.csv >> ./test1/airport.code2
-sort test1/airport.code2 | uniq >> uniq.airport.code2
-wc -l uniq.airport.code2
-grep -v '\"DEST_CITY_NAME\"' test1/uniq.airport.code | wc -l
+    awk -F',' '{print $7}' /ufrc/bsc4452/share/Class_Files/data/flights.May2017-Apr2018.csv >> ./test1/airport.code2
+    sort test1/airport.code2 | uniq >> uniq.airport.code2
+    wc -l uniq.airport.code2
+    grep -v '\"DEST_CITY_NAME\"' test1/uniq.airport.code | wc -l
 Total of 350 airports
 
 4. Within a function list the cities in Florida that have airports in the dataset. (*2 points*)
 
-awk -F',' '{print $3,$4,$5}' /ufrc/bsc4452/share/Class_Files/data/flights.May2017-Apr2018.csv >> test1/question4
-grep 'FL\"$' test1/question4 | sort | uniq | wc –l
+    awk -F',' '{print $3,$4,$5}' /ufrc/bsc4452/share/Class_Files/data/flights.May2017-Apr2018.csv >> test1/question4
+    grep 'FL\"$' test1/question4 | sort | uniq | wc –l
 20 cities
 "DAB" "Daytona Beach  FL"
 "ECP" "Panama City  FL"
